@@ -8,16 +8,17 @@ namespace Airport
 	{
 		public App ()
 		{
-			// The root page of your application
+			AirportViewModel airports = new AirportViewModel ();
+
+			ListView list = new ListView () {
+				ItemTemplate = new DataTemplate (typeof(AirportItemCell)),
+				ItemsSource = airports.airports
+			};
+
 			MainPage = new ContentPage {
 				Content = new StackLayout {
 					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
+					Children = { list }
 				}
 			};
 		}
