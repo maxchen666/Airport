@@ -12,7 +12,7 @@ namespace Airport
 
 			Label code = new Label () { Font = Font.SystemFontOfSize (10) };
 			code.SetBinding(Label.TextProperty, "code");
-
+			 
 			Label type = new Label () { Font = Font.SystemFontOfSize (10) };
 			type.SetBinding(Label.TextProperty, "type");
 

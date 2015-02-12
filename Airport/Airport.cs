@@ -7,7 +7,7 @@ namespace Airport
 	public class App : Application
 	{
 		public App ()
-		{
+		{ 
 			AirportViewModel airports = new AirportViewModel ();
 
 			ListView list = new ListView () {

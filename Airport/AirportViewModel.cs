@@ -16,7 +16,7 @@ namespace Airport
 		{
 			string url = "http://airports.pidgets.com/v1/airports?country=Canada&format=json";
 
-			HttpWebResponse wrResp = null;
+			HttpWebResponse wrResp = null; 
 			HttpWebRequest wrReq = (HttpWebRequest)WebRequest.Create(url);
 			wrReq.Method = "GET";
 			wrReq.ContentType = "text/xml";

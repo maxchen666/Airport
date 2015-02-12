@@ -15,7 +15,7 @@ namespace Airport
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
-		public AirportModel ()
+		public AirportModel () 
 		{
 			name = "";
 			code = "";
